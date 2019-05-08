@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(44, 36, 39, 0.075);
+}
+nav>ul>li{
+    list-style-type: none;
+}
+.list{
+    position: fixed;
+    width: 33.7%;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+    margin: 0;
+    background: #A6A1A3;
+    z-index: 1;
+}
+.list li{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-top: 10px;
+    display: inline-block;
+}
+.list li a{
+    color: #AE2ABF;
+    padding: 5px;
+    text-decoration: none;
+}
+.list li a:hover{
+    color: rgb(0, 0, 0);
+    background-color:  #A6A1A3;
+    border: 3px solid #F27313;
+    transition: 0.5s;
+}
+.list li:hover a{
+    border-radius: 8px;
+}
+.heading{
+ border: 1px solid rgb(172, 172, 172);
+}
+.heading_text{
+    text-align: center;
+    color: #F27313;
+    font-family: 'Righteous', cursive;
+    margin-top: 50px;
+    position: relative;
+}
+.container{
+    position: relative;
+    display: flex;
+}
+.blog_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog_container h3{
+    font-family: 'Oswald', sans-serif;
+}
+#h3recent{
+    border-bottom: 2px solid black;
+}
+.blogs{
+    text-align: center;
+    max-width: 44%;
+    margin-left: 16%;
+    margin-right: 10%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(166, 161, 163, 0.459);
+    border-radius: 15px;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(174, 42, 191, 0.75), rgba(0, 0, 0, 0));
+    max-width: 98%;
+    margin-top: 2px;
+}
+.side_bar{
+    height: 80vh;
+    position: fixed;
+    min-width: 10%;
+    border: 2px solid rgb(206, 206, 206);
+}
+.blogs h3 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.blogs h3:hover a{
+      color: #AE2ABF;
+}
+.read_more:hover{
+      border-radius: 6px;
+      padding: 1px;
+      border: 2px solid black;
+}
+.read_more a{
+      text-decoration: none;
+}
+.side_bar h3{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.side_bar ul li{
+    margin-top: 20px;
+    margin-right: 3px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+.side_bar ul li a{
+    text-decoration: none;
+}
+.side_bar ul li a:hover{
+   border-bottom: 6px solid #F27313;
+   transition: 0.2s linear;
+}
+#footer{
+    margin-left: 170px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

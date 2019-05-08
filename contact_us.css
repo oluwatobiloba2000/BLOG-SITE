@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    height: 90vh;
+    width: auto;
+    animation: 10s fader linear infinite;
+    padding: 50px;
+}
+@keyframes fader {
+    0%{
+       background: url("img/contactUs1.jpg");
+       background-position: cover;
+       background-size:100% 100%;
+       background-repeat: no-repeat;
+    }
+    50%{
+       background: url("img/contactUs2.jpg");
+       background-position: cover;
+       background-size:100% 100%;
+       background-repeat: no-repeat;
+    }
+    100%{
+        background: url("img/contactUs1.jpg");
+        background-position: cover;
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+.contact_box::after{
+    content: "";
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    background: url("img/contact_us3.jpg");
+    background-position: cover;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+    z-index: -1;
+    top: 0;
+}
+.contact_box{
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+.nav li{
+    z-index: 10;
+    display: inline-block;
+    list-style-type: none;
+}
+.nav li a{
+    font-family: 'Oswald', sans-serif;
+    color: #F27313;
+    text-decoration: none;
+}
+.nav li a:hover{
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color:  #A6A1A3;
+    border: 3px solid #F27313;
+    transition: 0.3s;
+}
+.container_box h1{
+    z-index: 10;
+}
+.nav li:hover a{
+    border-radius: 8px;
+}
+.fas{
+    font-size: 20px;
+}
+.main{
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    color: #F27313;
+}
+.main h1{
+    font-size: 50px;
+}
+.contact_details{
+    font-family: 'Righteous', cursive;
+}
+.contact_details p{
+    font-family: 'Oswald', sans-serif;
+    padding: 15px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+}
+.social{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.fab{
+    font-size: 30px;
+    color: #F27313;
+}
+.fab:hover{
+    color: aliceblue;
+}
