@@ -121,4 +121,8 @@ body{
     .contact_details p{
         letter-spacing: 1px;
     }
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
 }
