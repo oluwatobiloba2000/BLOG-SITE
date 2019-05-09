@@ -108,3 +108,17 @@ body{
 .fab:hover{
     color: aliceblue;
 }
+@media all and (max-width:550px){
+    body{
+        height: 100vh;
+        width: auto;
+        padding: 20px;
+    }
+    .contact_box::after{
+        height: 99vh;
+        width: 100%;
+    }
+    .contact_details p{
+        letter-spacing: 1px;
+    }
+}
