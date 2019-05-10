@@ -49,6 +49,9 @@ nav>ul>li{
     justify-content: flex-end;
     justify-content: space-around;
 }
+ul.list{
+    padding: 0;
+}
 .list li{
     font-family: 'Oswald', sans-serif;
     letter-spacing: 4px;
