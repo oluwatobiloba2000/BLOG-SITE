@@ -109,10 +109,31 @@ body{
     color: aliceblue;
 }
 @media all and (max-width:550px){
+    .nav {
+        padding-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+        justify-content: space-around;
+    }
+    .main {
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .main h1 {
+        font-size: 30px;
+        text-align: center;
+    }
     body{
         height: 100vh;
         width: auto;
         padding: 20px;
+        background: url("img/contactUs1.jpg");
+        background-position: cover;
+        background-size:100% 100%;
+        background-repeat: no-repeat;
     }
     .contact_box::after{
         height: 99vh;
@@ -120,6 +141,9 @@ body{
     }
     .contact_details p{
         letter-spacing: 1px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
     }
     .social{
         display: flex;
