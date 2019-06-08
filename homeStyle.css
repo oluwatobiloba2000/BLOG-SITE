@@ -119,10 +119,16 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+input{
+    width: 92.3%;
+}
+#category{
+    width: 86.8%;
+}
 
 .blog{
     text-align: center;
-    height: 95vh;
+    height: 50%;
     max-width: 30%;
     border-radius: 10px;
     margin: 10px;
@@ -148,9 +154,83 @@ hr{
     padding: 15px;
     font-size: 25px;
 }
+#form-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    background-color: #F27313;
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+#h3{
+    text-align: center;
+}
+button{
+    border: 0;
+    margin: 5px 3px 5px 3px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: blue;
+    color: #fff;
+}
+.diverror{
+    display: flex;
+    align-self: center;
+    margin-bottom: 5px;
+    background: rgb(255, 8, 8);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(212, 212, 212);
+}
+button:hover{
+    background-color: rgb(2, 2, 47);
+}
+input[type=file]{
+    padding: 5px;
+    background: rgb(59, 59, 255);
+    color: white;
+    border-radius: 5px;
+}
+
+/* javascript class */
+.removeWarning{
+    display: none;
+}
+/* javascript class */
+.javascriptBlog{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    height: 40%;
+    width: 70%;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(241, 241, 241, 0.466);
+}
+.deletePost{
+    text-align: right;
+    cursor: pointer;
+    padding-right: 8px;
+    margin: 0;
+}
+.deletePost:hover{
+    color: red;
+}
+.posttitle{
+    color: black;
+}
+.posttitle:hover{
+    cursor: pointer;
+    color: #AE2ABF;
+}
+
 @media all and (max-width:550px){
     .page_container{
-        height: 400vh;
+        height: 1000%;
     }
     .top{
         background: url("img/homepage.jpg");
@@ -162,10 +242,24 @@ hr{
         align-items: center;
     }
     .blog{
+        min-height: 50%;
         max-width: 80%;
     }
     .social_networks{
         display: flex;
         justify-content: space-around;
+    }
+    .diverror{
+        display: flex;
+        align-self: center;
+        margin-bottom: 5px;
+        width: 99%;
+    }
+    .javascriptBlog{
+        height: 40%;
+        width: 80%;
+    }
+    form{
+    width: 80%;
     }
 }

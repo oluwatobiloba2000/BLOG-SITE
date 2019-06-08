@@ -57,7 +57,7 @@
 
             <!--BLOG TWO BEGINS-->
             <div class="blog">
-               <img src="https://techcabal.com/wp-content/uploads/2019/04/mike-meyers-791389-unsplash-e1556198257631-240x160.jpg" width="100%" alt="">
+               <img src="https://techcabal.com/wp-content/uploads/2019/04/mike-meyers-791389-unsplash-e1556198257631-240x160.jpg"  width="100%" alt="">
                   <h3>
                     <a target="_blank" href="https://techcabal.com/2019/04/25/egypts-growing-esports-industry/">Egypt’s Growing eSports Industry </a></h3>
                   <p>
@@ -92,6 +92,50 @@
          </main>
          <!--MAIN ENDS HERE-->
          <div class="bottom">
+           <hr id="last-post">
+
+                       <!--NEW POST AREA STARTS-->
+                  <div id="form-container">
+                <form id="form" action="" autocomplete="on">
+                 <h3 id="h3">Make A New Post</h3>
+                  <!-- UPLOAD AN IMAGE STARTS -->
+                    <label for="image">Image
+                      <input id="image" placeholder="paste image url" type="text">
+                    </label>
+
+                  <!-- UPLOAD AN IMAGE ENDS -->
+
+
+
+                <!-- TITLE OF THE POST -->
+                <label for="text">Title
+                <input id="text" name="title" placeholder="input the post title....." type="text" required>
+                </label>
+                <!-- TITLE OF THE POST ENDS -->
+                <!-- POST CATEGORY STARTS -->
+                <label for="category">Category
+                  <select name="category" id="category" required>
+                    <option disabled>choose a category</option>
+                    <option value="Business">Business</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Gist">Gist</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </label>
+                <!-- POST CATEGORY ENDS -->
+                <!-- DATE OF THE POST -->
+                <label for="myDate">Date
+                <input type="date" name="date" id="myDate" required>
+                </label>
+                <!-- DATE OF THE POST ENDS -->
+                <!-- INPUT CONTENT -->
+                <textarea name="textarea" maxlength="350" id="textArea" cols="70" rows="10" required placeholder="Maximum of 350 characters post content......"></textarea>
+                <!-- INPUT CONTENT END -->
+                <button id="button">submit new post</button>
+               </form>
+              </div>
+                  <!-- NEW POST AREA ENDS -->
+
                <div class="bottom_box1">
                       <h3 class="bottom_h3"><a href="index.html=">TOBBY BLOG</a></h3>
                   <span class="bottom_list">
@@ -100,6 +144,8 @@
                         <li><a href="Archive.html">Archive</a></li>
                      </ul>
                   </span>
+
+
                </div>
          <div class="bottom_box2">
             <footer>
@@ -114,5 +160,6 @@
       </div>
    </div>
    <!--PAGE CONTAINER ENDS-->
+   <script src="script.js"></script>
  </body>
 </html>
