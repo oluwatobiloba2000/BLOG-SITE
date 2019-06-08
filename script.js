@@ -91,3 +91,6 @@
     }
      console.table(inputs);
 
+      //            [1 ISSUE]
+      //i am not getting the data from the local storage when the page reloads
+      // the issue is from this code [ const inputs = localStorage.getItem('postStorage')  ||[]; ]
